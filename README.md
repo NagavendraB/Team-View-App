@@ -12,10 +12,16 @@ It will allows a user to view and manage an imaginary team, user can prrform bel
 It will list the all users.
 
 ###### Starting screen:
-![Phase 1](src/docs/PersonalityTest1.PNG)
+![Phase 1](docs/TeamView1.PNG)
 
-###### Screen with user answers:
-![Phase 2](src/docs/PersonalityTest2.PNG)
+###### Screen add member:
+![Phase 2](docs/TeamView-add.PNG)
+
+###### Screen no search results:
+![Phase 2](docs/TeamView-NoResults.PNG)
+
+###### Screen show all:
+![Phase 2](docs/TeamView-ShowAll.PNG)
 
 ### Get it running
 
