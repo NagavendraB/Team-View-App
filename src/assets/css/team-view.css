@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.team-view-app {
+  width: 550px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #4f7572;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+/* APP HEADING */
+.team-view-app h4 {
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/* APP ICONS */
+span.add-icon {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #E9FCF8;
+  border-radius: 50%;
+  font-size: 32px;
+  margin-right: 10px;
+  text-align: center;
+  color: #408a71;
+  cursor: pointer;
+}
+
+.user-icon {
+  background: url("../icons/avatar-default.png");
+  width: 50px;
+  height: 50px;
+  float: left;
+  border-radius: 50%;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.close {
+  display: none;
+}
+
+.team-member .user-icon:hover {
+  background: white;
+  border: 1px solid orange;
+  width: 48px;
+  height: 48px;
+}
+
+.team-member .user-icon:hover .close  {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  color: orange;
+  position: relative;
+  left: 3px;
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari 3-8 */
+  transform: rotate(40deg);
+}
+
+.add-team-member:hover span.add-icon  {
+  background: white;
+  cursor: pointer;
+}
+
+.avilable-user-list .user-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* TEAM MEMBERS */
+.add-team-member {
+  color: #408a71;
+  font-weight: bold;
+}
+
+.add-team-member, 
+.team-member {
+  width: 220px;
+  float: left;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+/* HOVER STYLES */
+.team-member:hover {
+  background: #E9FCF8;
+  cursor: pointer;
+}
+
+.avilable-user-list li:hover {
+  background: #E9FCF8;
+}
+
+.add-team-member:hover {
+  background: #E9FCF8;
+}
+
+.add-clicked:hover {
+  background: white;
+}
+
+/* OVERLAY */
+.overlay {
+  display: none;
+}
+
+.add-clicked .overlay {
+  display: block;
+  background: white;
+  border: 1px solid lightgrey;
+  position: absolute;
+  top: 90px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/* SHOW MORE */
+.show-more-strip {
+  display: none;
+  line-height: 30px;
+  background: #E9FCF8;
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid lightgrey;
+  padding: 5px 15px;
+  border-top: none;
+  cursor: pointer;
+}
+
+.show-more-active .show-more-strip {
+  display: block;
+}
+
+.show-more-active .team-view-app {
+  max-height: 235px;
+  border-bottom: none;
+}
+
+input.add-input {
+  width: 80%;
+  height: 30px;
+  margin: 15px 20px 0 20px;
+  border: none;
+  border-bottom: 1px solid #4f7572;
+}
+
+.avilable-user-list {
+  padding: 0;
+  background: white;
+  margin: 15px 0 0 0;
+  width: 250px;
+}
+
+.avilable-user-list li:not(.no-results) {
+  list-style: none;
+  line-height: 50px;
+  cursor: pointer;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.add-input:focus {
+  outline:none;
+}
+
+/* SEARCH NO RESULTS */
+.no-results {
+  list-style: none;
+  padding: 10px 20px 20px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+span.no-results-suggestion {
+  display: block;
+  color: grey;
+  font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .team-view-app {
+    width: 320px;
+  }
+}
